@@ -3,7 +3,10 @@
 @import './styles/normalize.css';
 @import './styles/global/utility.css';
 @import './styles/components/container.css';
-
-div {
-  flex-direction: row;
-}
+@import './styles/components/navbar.css';
+@import './styles/components/page.css';
+@import './styles/components/blocktext.css';
+@import './styles/components/recommend.css';
+@import './styles/components/benefits.css';
+@import './styles/components/portfolio.css';
+@import './styles/components/pricing.css';

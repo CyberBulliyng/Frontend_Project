@@ -1,0 +1,76 @@
+.pricing_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing_head {
+  padding-top: 80px;
+}
+
+.pricing_head_title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--color-grey-900);
+  padding-bottom: 24px;
+}
+
+.pricing_head_desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-grey-700);
+  padding-bottom: 60px;
+}
+
+.pricing_table {
+  box-shadow:
+    0 4px 4px -4px rgb(30 33 44 / 3%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 80px 80px -20px rgb(154 156 165 / 8%);
+}
+
+.pricing_plan {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-grey-900);
+}
+
+.pricing_sq {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-grey-700);
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.clients_title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--color-grey-900);
+  padding-bottom: 60px;
+}
+
+.clients_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-bottom: 120px;
+  gap: 102px;
+}

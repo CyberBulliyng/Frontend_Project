@@ -1,0 +1,106 @@
+.portfolio_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 154px;
+  gap: 795px;
+}
+
+.portfolio_title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--color-grey-900);
+}
+
+.portfolio_head_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 36px;
+}
+
+.portfolio_projects_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 60px;
+  gap: 30px;
+}
+
+.portfolio_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 4px -4px rgb(30 33 44 / 3%),
+    0 12px 10px -6px rgb(154 156 165 / 4%),
+    0 30px 24px -10px rgb(154 156 165 / 5%),
+    0 80px 80px -20px rgb(154 156 165 / 8%);
+}
+
+.portfolio_item:hover {
+  box-shadow:
+    0 4px 4px -4px rgb(30 33 44 / 5%),
+    0 12px 10px -6px rgb(154 156 165 / 8%),
+    0 30px 24px -10px rgb(154 156 165 / 10%),
+    0 80px 80px -20px rgb(154 156 165 / 16%);
+}
+
+.portfolio_item_title {
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-rgey-900);
+}
+
+.portfolio_item_desc {
+  padding-top: 4px;
+  padding-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-rgey-700);
+}
+
+.portfolio_item_button {
+  visibility: hidden;
+}
+
+.all_portfolio {
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  gap: 40px;
+}
+
+.all_portfolio_title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: var(--color-grey-900);
+}
+
+.all_portfolio_button {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 325%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
