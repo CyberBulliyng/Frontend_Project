@@ -1,0 +1,181 @@
+.page_block_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_up_block {
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
+  gap: 242px;
+}
+
+.info_company {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.talk_company {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.messangers_company {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.messanger {
+  opacity: 0.6;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.company_desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-white);
+  opacity: 0.6;
+}
+
+.description_mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail_block {
+  display: flex;
+  flex-direction: row;
+  padding-top: 24px;
+}
+
+.input_mail {
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 4px;
+  background: rgb(255 255 255 / 12%);
+}
+
+.input_mail::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-white);
+  padding-left: 16px;
+  opacity: 0.6;
+}
+
+.button_subscribe {
+  border-radius: 0 4px 4px 0;
+  padding: 0 32px;
+  background-color: var(--color-orange);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 314%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.desc_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--color-white);
+}
+
+.annotation_mail {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-white);
+  opacity: 0.6;
+}
+
+.footer_middle_block {
+  display: flex;
+  flex-direction: row;
+  padding-top: 49px;
+  gap: 125px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  padding-bottom: 13px;
+}
+
+.stroka {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 4px;
+}
+
+.text_strong {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-white);
+}
+
+.text_light {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-white);
+  opacity: 0.6;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+}
+
+.text_copyright {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.CC_text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-white);
+}
+
+.heart_img {
+}
+
+.go_to_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.go_to_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-white);
+}
+
+.go_to_button {
+  border-radius: 4px;
+  background-color: var(--color-orange);
+  padding: 8px;
+}

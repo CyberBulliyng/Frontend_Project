@@ -39,4 +39,19 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-grey-200);
+  background-image: url('/images/background1.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 30%;
+}
+
+.page_form {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('/images/building_back.png');
+}
+
+.page_footer {
+  background-color: var(--color-grey-900);
 }
