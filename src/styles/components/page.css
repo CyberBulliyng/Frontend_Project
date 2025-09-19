@@ -4,7 +4,7 @@
   min-height: 100vh;
 }
 
-.page_navbar {
+.header {
   flex-shrink: 0;
   background-color: var(--color-grey-200);
   background-image: url('/images/background.png');
@@ -13,11 +13,11 @@
   background-size: 60%;
 }
 
-.page_content {
+.page__content {
   flex-grow: 1;
 }
 
-.page_benefits {
+.page__benefits {
   background-color: var(--color-grey-900);
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
   justify-content: center;
 }
 
-.page_portfolio {
+.page__portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
   background-color: var(--color-white);
 }
 
-.page_pricing {
+.page__pricing {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,13 +45,13 @@
   background-size: 30%;
 }
 
-.page_form {
+.page__form {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-image: url('/images/building_back.png');
 }
 
-.page_footer {
+.page__footer {
   background-color: var(--color-grey-900);
 }

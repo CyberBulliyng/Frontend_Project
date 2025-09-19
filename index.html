@@ -15,10 +15,10 @@
   </head>
   <body>
     <div class="page">
-      <div class="page_navbar">
+      <div class="header">
         <div class="container">
           <div class="navbar">
-            <div class="navbar_logo">
+            <div class="navbar__logo">
               <svg width="105" height="20" viewBox="0 0 105 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0 10.0998C0 3.9998 3.3 0.299805 8.7 0.299805C12.8 0.299805 16.1 2.7998 16.7 6.4998C16.8 6.8998 16.5 7.1998 16.1 7.1998H13.5C13.2 7.1998 13 6.9998 12.9 6.6998C12.4 4.7998 10.8 3.5998 8.7 3.5998C5.8 3.5998 4 6.0998 4 10.0998C4 14.0998 5.8 16.5998 8.8 16.5998C10.9 16.5998 12.4 15.4998 13 13.6998C13.1 13.3998 13.3 13.1998 13.6 13.1998H16.2C16.6 13.1998 16.9 13.5998 16.8 13.8998C16.2 17.4998 13 19.8998 8.8 19.8998C3.3 19.8998 0 16.0998 0 10.0998Z"
@@ -56,15 +56,23 @@
                 />
               </svg>
             </div>
-            <div class="navbar_menu">
-              <p>About us</p>
-              <p>Services</p>
-              <p>Work</p>
-              <p>News</p>
-            </div>
-            <div class="navbar_action">
-              <div class="action_content">
-                <div class="phone_logo">
+            <nav class="navbar__menu">
+              <ul>
+                <li><a class="navbar__link">About us</a></li>
+              </ul>
+              <ul>
+                <li><a class="navbar__link">Services</a></li>
+              </ul>
+              <ul>
+                <li><a class="navbar__link">Work</a></li>
+              </ul>
+              <ul>
+                <li><a class="navbar__link">News</a></li>
+              </ul>
+            </nav>
+            <div class="navbar__actions">
+              <div class="navbar__action">
+                <div class="navbar__icon navbar__icon--phone">
                   <svg width="24" height="38" viewBox="0 0 24 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -74,13 +82,13 @@
                     />
                   </svg>
                 </div>
-                <div class="number_phone">
+                <div class="navbar__info">
                   <p><strong>Call us</strong></p>
                   <p>(405) 555-0128</p>
                 </div>
               </div>
-              <div class="action_content">
-                <div class="message_logo">
+              <div class="navbar__action">
+                <div class="navbar__icon navbar__icon--mail">
                   <svg width="33" height="27" viewBox="0 0 33 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -90,39 +98,41 @@
                     />
                   </svg>
                 </div>
-                <div class="message_mail">
+                <div class="navbar__info">
                   <p><strong>Talk to us</strong></p>
                   <p>hello@createx.com</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="block_text">
-            <div class="block_nav_text">
-              <p class="dark_nav_text">Homepage</p>
-              <p class="light_nav_text">/</p>
-              <p class="dark_nav_text">Services</p>
-              <p class="light_nav_text">/</p>
-              <p class="light_nav_text">Interior Design</p>
-            </div>
-            <h1 class="head_text">INTERIOR<br />DESIGN</h1>
-            <p class="first_text">
+          <div class="header__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li><a class="breadcrumbs__link">Homepage</a></li>
+              <li><a class="breadcrumbs__link">/</a></li>
+              <li><a class="breadcrumbs__link">Services</a></li>
+              <li><a class="breadcrumbs__link">/</a></li>
+              <li><a class="breadcrumbs__link breadcrumbs__link--active">Interior Design</a></li>
+            </ul>
+          </div>
+          <div class="banner header__banner">
+            <h1 class="banner__title">INTERIOR<br />DESIGN</h1>
+            <p class="banner__desc">
               Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. <br />
               Laoreet aenean vulputate elementum blandit amet.
             </p>
           </div>
         </div>
       </div>
-      <div class="page_content">
+      <div class="page__content">
         <div class="container">
-          <div class="first_block_content">
-            <div class="first_block_bunner">
-              <img src="/images/interier.jpg" alt="" />
-              <div class="content_bunner">
-                <h2 class="bunner_title">We offer</h2>
-                <div class="minus_block">
-                  <div class="block_title">
-                    <div class="bunner_img">
+          <div class="card__offer">
+            <div class="card__offer__bunner">
+              <img class="card__offer__img" src="/images/room1.jpg" alt="" />
+              <div class="bunner__content">
+                <h2 class="bunner__title">We offer</h2>
+                <div class="bunner__divider__segment">
+                  <div class="bunner__segment__head">
+                    <button class="button bunner__segment__btn">
                       <svg width="22" height="2" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           fill-rule="evenodd"
@@ -131,39 +141,38 @@
                           fill="#FF5A30"
                         />
                       </svg>
-                    </div>
-                    <h3 class="bunner_minus_title">Interior design of apartments</h3>
+                    </button>
+                    <h3 class="bunner__segment__title">Interior design of apartments</h3>
                   </div>
-                  <div class="bunner_block_text">
-                    <p class="bunner_minus_desc">
-                      Adipiscing nunc arcu enim elit mattis eu placerat<br />proin. Imperdiet elementum faucibus
-                      dignissim<br />
-                      purus. Fusce parturient diam magna ullamcorper<br />morbi semper massa ac facilisis.
-                    </p>
-                  </div>
+                  <p class="bunner__divider__desc">
+                    Adipiscing nunc arcu enim elit mattis eu placerat<br />proin. Imperdiet elementum faucibus
+                    dignissim<br />
+                    purus. Fusce parturient diam magna ullamcorper<br />morbi semper massa ac facilisis.
+                  </p>
                 </div>
-                <div class="plus_block">
-                  <div class="block_title">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M11 0C11.5523 0 12 0.447715 12 1V10H21C21.5523 10 22 10.4477 22 11C22 11.5523 21.5523 12 21 12H12V21C12 21.5523 11.5523 22 11 22C10.4477 22 10 21.5523 10 21V12H1C0.447715 12 0 11.5523 0 11C0 10.4477 0.447715 10 1 10H10V1C10 0.447715 10.4477 0 11 0Z"
-                        fill="#FF5A30"
-                      />
-                    </svg>
-                    <h3 class="bunner_plus_title">Interior design of private houses</h3>
+                <div class="bunner__plus__segment">
+                  <div class="bunner__segment__head">
+                    <button class="button bunner__segment__btn">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11 0C11.5523 0 12 0.447715 12 1V10H21C21.5523 10 22 10.4477 22 11C22 11.5523 21.5523 12 21 12H12V21C12 21.5523 11.5523 22 11 22C10.4477 22 10 21.5523 10 21V12H1C0.447715 12 0 11.5523 0 11C0 10.4477 0.447715 10 1 10H10V1C10 0.447715 10.4477 0 11 0Z"
+                          fill="#FF5A30"
+                        />
+                      </svg>
+                    </button>
+                    <h3 class="bunner__segment__title">Interior design of private houses</h3>
                   </div>
-                  <div class="bunner_block_text"></div>
                 </div>
               </div>
             </div>
-            <div class="info_block">
-              <h2 class="info_title">That’s how we do it</h2>
-              <div class="how_we_do">
-                <div class="how_we_do_item">
-                  <div class="number_item">
-                    <h2 class="digit_item">01</h2>
+            <div class="info__block">
+              <h2 class="info__title">That’s how we do it</h2>
+              <div class="how__we__do">
+                <div class="how__we__do__item">
+                  <div class="number__item">
+                    <h2 class="digit__item">01</h2>
                     <svg width="209" height="1" viewBox="0 0 209 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <line
                         x1="0.5"
@@ -176,14 +185,14 @@
                       />
                     </svg>
                   </div>
-                  <div class="text_item">
-                    <h2 class="title_item">Work Estimate</h2>
-                    <p class="item_desc">Culpa nostrud commodo ea consequat aliquip reprehenderit.</p>
+                  <div class="text__item">
+                    <h2 class="item__title">Work Estimate</h2>
+                    <p class="item__desc">Culpa nostrud commodo ea consequat aliquip reprehenderit.</p>
                   </div>
                 </div>
-                <div class="how_we_do_item">
-                  <div class="number_item">
-                    <h2 class="digit_item">02</h2>
+                <div class="how__we__do__item">
+                  <div class="number__item">
+                    <h2 class="digit__item">02</h2>
                     <svg width="209" height="1" viewBox="0 0 209 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <line
                         x1="0.5"
@@ -196,16 +205,16 @@
                       />
                     </svg>
                   </div>
-                  <div class="text_item">
-                    <h2 class="title_item">Contract</h2>
-                    <p class="item_desc">
+                  <div class="text__item">
+                    <h2 class="item__title">Contract</h2>
+                    <p class="item__desc">
                       Laoreet ultrices curabitur luctus quisque consequat. Leo lorem velit imperdiet auctor et tempor.
                     </p>
                   </div>
                 </div>
-                <div class="how_we_do_item">
-                  <div class="number_item">
-                    <h2 class="digit_item">03</h2>
+                <div class="how__we__do__item">
+                  <div class="number__item">
+                    <h2 class="digit__item">03</h2>
                     <svg width="209" height="1" viewBox="0 0 209 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <line
                         x1="0.5"
@@ -218,14 +227,14 @@
                       />
                     </svg>
                   </div>
-                  <div class="text_item">
-                    <h2 class="title_item">Mobilization</h2>
-                    <p class="item_desc">Odio massa scelerisque purus arcu sed velit eleifend cursus leo.</p>
+                  <div class="text__item">
+                    <h2 class="item__title">Mobilization</h2>
+                    <p class="item__desc">Odio massa scelerisque purus arcu sed velit eleifend cursus leo.</p>
                   </div>
                 </div>
-                <div class="how_we_do_item">
-                  <div class="number_item">
-                    <h2 class="digit_item">04</h2>
+                <div class="how__we__do__item">
+                  <div class="number__item">
+                    <h2 class="digit__item">04</h2>
                     <svg width="209" height="1" viewBox="0 0 209 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <line
                         x1="0.5"
@@ -238,9 +247,9 @@
                       />
                     </svg>
                   </div>
-                  <div class="text_item">
-                    <h2 class="title_item">Construction Work</h2>
-                    <p class="item_desc">
+                  <div class="text__item">
+                    <h2 class="item__title">Construction Work</h2>
+                    <p class="item__desc">
                       Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.
                     </p>
                   </div>
@@ -249,13 +258,13 @@
             </div>
           </div>
         </div>
-        <div class="page_benefits">
+        <div class="page__benefits">
           <div class="container">
-            <div class="benefits_block">
-              <h2 class="benefit_title">Our benefits</h2>
-              <p class="benefit_desc">Our mission is to set the highest standards for construction sphere.</p>
-              <div class="benefit_grid">
-                <div class="benefit_item">
+            <div class="benefits">
+              <h2 class="benefits__title">Our benefits</h2>
+              <p class="benefits__desc">Our mission is to set the highest standards for construction sphere.</p>
+              <div class="benefits__grid">
+                <div class="benefits__item">
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M16.6204 9.24805H8.22754C7.45081 9.24805 6.82129 9.87756 6.82129 10.6543C6.82129 11.431 7.45081 12.0605 8.22754 12.0605H16.6204C17.3967 12.0605 18.0266 11.431 18.0266 10.6543C18.0266 9.87756 17.3967 9.24805 16.6204 9.24805Z"
@@ -298,8 +307,8 @@
                       fill="#FF5A30"
                     />
                   </svg>
-                  <h3 class="benefit_item_title">Fixed Terms & Cost</h3>
-                  <p class="benefit_item_desc">
+                  <h3 class="benefits__item__title">Fixed Terms & Cost</h3>
+                  <p class="benefits__item__desc">
                     Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
                   </p>
                 </div>
@@ -311,11 +320,11 @@
                       y1="-2.18557e-08"
                       x2="0.500008"
                       y2="188"
-                      stroke="url(#paint0_linear_2111_3317)"
+                      stroke="url(#paint0__linear__2111__3317)"
                     />
                     <defs>
                       <linearGradient
-                        id="paint0_linear_2111_3317"
+                        id="paint0__linear__2111__3317"
                         x1="-0.999987"
                         y1="188"
                         x2="2.53349"
@@ -331,15 +340,15 @@
                     </defs>
                   </svg>
                 </div>
-                <div class="benefit_item">
+                <div class="benefits__item">
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M45.1875 34.0856V29.625C45.1875 24.9949 43.6945 20.594 40.87 16.8982C38.3629 13.6176 34.8964 11.1016 31.026 9.73163C30.9183 7.50066 29.0697 5.71875 26.8125 5.71875H21.1875C18.9303 5.71875 17.0817 7.50066 16.974 9.73163C13.1036 11.1016 9.63713 13.6176 7.12997 16.8982C4.30547 20.594 2.8125 24.9949 2.8125 29.625V34.0856C1.17572 34.6661 0 36.2292 0 38.0625C0 40.3887 1.89253 42.2812 4.21875 42.2812H43.7812C46.1075 42.2812 48 40.3887 48 38.0625C48 36.2292 46.8243 34.6661 45.1875 34.0856ZM5.625 29.625C5.625 24.554 7.79119 19.8068 11.3438 16.4198V21.1875C11.3438 21.9641 11.9734 22.5938 12.75 22.5938C13.5266 22.5938 14.1562 21.9641 14.1562 21.1875V14.2141C15.0424 13.6484 15.9822 13.1549 16.9688 12.7442V24C16.9688 24.7766 17.5984 25.4062 18.375 25.4062C19.1516 25.4062 19.7812 24.7766 19.7812 24V10.7749C19.7813 10.771 19.7812 10.7672 19.7812 10.7633V9.9375C19.7812 9.16209 20.4121 8.53125 21.1875 8.53125H26.8125C27.5879 8.53125 28.2188 9.16209 28.2188 9.9375V10.763C28.2188 10.767 28.2187 10.7709 28.2188 10.775V24C28.2188 24.7766 28.8484 25.4062 29.625 25.4062C30.4016 25.4062 31.0312 24.7766 31.0312 24V12.7442C32.0178 13.155 32.9576 13.6485 33.8438 14.2141V21.1875C33.8438 21.9641 34.4734 22.5938 35.25 22.5938C36.0266 22.5938 36.6562 21.9641 36.6562 21.1875V16.4198C40.2088 19.8068 42.375 24.554 42.375 29.625V33.8438H5.625V29.625ZM43.7812 39.4688H4.21875C3.44334 39.4688 2.8125 38.8379 2.8125 38.0625C2.8125 37.2871 3.44334 36.6562 4.21875 36.6562H43.7812C44.5567 36.6562 45.1875 37.2871 45.1875 38.0625C45.1875 38.8379 44.5567 39.4688 43.7812 39.4688Z"
                       fill="#FF5A30"
                     />
                   </svg>
-                  <h3 class="benefit_item_title">Qualified Workers</h3>
-                  <p class="benefit_item_desc">
+                  <h3 class="benefits__item__title">Qualified Workers</h3>
+                  <p class="benefits__item__desc">
                     Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
                   </p>
                 </div>
@@ -351,11 +360,11 @@
                       y1="-2.18557e-08"
                       x2="0.500008"
                       y2="188"
-                      stroke="url(#paint0_linear_2111_3317)"
+                      stroke="url(#paint0__linear__2111__3317)"
                     />
                     <defs>
                       <linearGradient
-                        id="paint0_linear_2111_3317"
+                        id="paint0__linear__2111__3317"
                         x1="-0.999987"
                         y1="188"
                         x2="2.53349"
@@ -371,105 +380,109 @@
                     </defs>
                   </svg>
                 </div>
-                <div class="benefit_item">
+                <div class="benefits__item">
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M33.4623 33.4195V23.689L39.0715 21.3655C43.5808 19.4978 45.7297 14.3096 43.862 9.80033C41.9942 5.29104 36.8061 3.14191 32.2967 5.00988L1.67353 17.6945L4.20854 21.4797L0 23.2229L3.35569 31.3243L9.18442 28.91L11.7194 32.6952L25.0202 27.1857V33.4195C23.9261 34.506 23.2473 36.0104 23.2473 37.6704C23.2473 40.9754 25.9362 43.6643 29.2412 43.6643C30.9014 43.6643 32.4058 42.9856 33.4922 41.8913H48V33.4494H33.4923C33.4823 33.4394 33.4723 33.4294 33.4623 33.4195ZM4.87782 27.6496L3.67473 24.7451L5.80454 23.8629L7.58861 26.5269L4.87782 27.6496ZM12.7733 29.2145L5.91929 18.98L33.373 7.60827C36.4497 6.33401 39.9892 7.80008 41.2636 10.8767C42.5379 13.9533 41.0717 17.4929 37.9952 18.7673L12.7733 29.2145ZM27.8327 26.0208L30.6497 24.854V31.8454C30.1977 31.7361 29.7264 31.6767 29.2412 31.6767C28.7561 31.6767 28.2847 31.7361 27.8327 31.8454V26.0208ZM29.2413 40.8518C27.4871 40.8518 26.0598 39.4245 26.0598 37.6703C26.0598 35.916 27.4871 34.4889 29.2413 34.4889C30.9956 34.4889 32.4228 35.916 32.4228 37.6703C32.4227 39.4246 30.9955 40.8518 29.2413 40.8518ZM35.0664 36.262H45.1876V39.079H35.0663C35.1756 38.6269 35.2351 38.1556 35.2351 37.6705C35.2351 37.1853 35.1757 36.714 35.0664 36.262Z"
                       fill="#FF5A30"
                     />
                   </svg>
-                  <h3 class="benefit_item_title">Supervision & Control</h3>
-                  <p class="benefit_item_desc">
+                  <h3 class="benefits__item__title">Supervision & Control</h3>
+                  <p class="benefits__item__desc">
                     Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
                   </p>
                 </div>
               </div>
-              <button class="benefit_button">Discuss a project</button>
+              <button class="button benefits__button">Discuss a project</button>
             </div>
           </div>
         </div>
-        <div class="page_portfolio">
+        <div class="page__portfolio">
           <div class="container">
-            <div class="portfolio_block">
-              <div class="portfolio_head">
-                <h3 class="portfolio_title">Related projects</h3>
-                <div class="portfolio_head_img">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z"
-                      fill="#424551"
-                    />
-                  </svg>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z"
-                      fill="#424551"
-                    />
-                  </svg>
+            <div class="portfolio">
+              <div class="portfolio__head">
+                <h3 class="portfolio__title">Related projects</h3>
+                <div class="portfolio__head__img">
+                  <button class="button portfolio__head__arrow__btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z"
+                        fill="#424551"
+                      />
+                    </svg>
+                  </button>
+                  <button class="button portfolio__head__arrow__btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z"
+                        fill="#424551"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
-              <div class="portfolio_projects_grid">
-                <div class="portfolio_item">
-                  <img class="portfolio_item_img" src="/images/room1.jpg" alt="" />
-                  <h4 class="portfolio_item_title">Kids Bedroom With Decorations</h4>
-                  <p class="portfolio_item_desc">Apartments & flats</p>
-                  <button class="portfolio_item_button">View Project</button>
+              <div class="portfolio__projects__grid">
+                <div class="portfolio__item">
+                  <img class="portfolio__item__img" src="/images/room1.jpg" alt="" />
+                  <h4 class="portfolio__item__title">Kids Bedroom With Decorations</h4>
+                  <p class="portfolio__item__desc">Apartments & flats</p>
+                  <button class="button portfolio__item__button">View Project</button>
                 </div>
-                <div class="portfolio_item">
-                  <img class="portfolio_item_img" src="/images/room2.jpg" alt="" />
-                  <h4 class="portfolio_item_title">Modern Double Bedroom</h4>
-                  <p class="portfolio_item_desc">Apartments & flats</p>
-                  <button class="portfolio_item_button">View Project</button>
+                <div class="portfolio__item">
+                  <img class="portfolio__item__img" src="/images/room2.jpg" alt="" />
+                  <h4 class="portfolio__item__title">Modern Double Bedroom</h4>
+                  <p class="portfolio__item__desc">Apartments & flats</p>
+                  <button class="button portfolio__item__button">View Project</button>
                 </div>
-                <div class="portfolio_item">
-                  <img class="portfolio_item_img" src="/images/room3.jpg" alt="" />
-                  <h4 class="portfolio_item_title">Scandinavian Style Interior</h4>
-                  <p class="portfolio_item_desc">Private houses</p>
-                  <button class="portfolio_item_button">View Project</button>
+                <div class="portfolio__item">
+                  <img class="portfolio__item__img" src="/images/room3.jpg" alt="" />
+                  <h4 class="portfolio__item__title">Scandinavian Style Interior</h4>
+                  <p class="portfolio__item__desc">Private houses</p>
+                  <button class="button portfolio__item__button">View Project</button>
                 </div>
               </div>
-              <div class="all_portfolio">
-                <h4 class="all_portfolio_title">Explore all our works</h4>
-                <button class="all_portfolio_button">View portfolio</button>
+              <div class="all__portfolio">
+                <h4 class="all__portfolio__title">Explore all our works</h4>
+                <button class="button all__portfolio__button">View portfolio</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="page_pricing">
+        <div class="page__pricing">
           <div class="container">
-            <div class="pricing_block">
-              <div class="pricing_head">
-                <h4 class="pricing_head_title">Pricing</h4>
-                <p class="pricing_head_desc">We offer you three categories of construction.</p>
+            <div class="pricing__segment">
+              <div class="pricing__head">
+                <h4 class="pricing__head__title">Pricing</h4>
+                <p class="pricing__head__desc">We offer you three categories of construction.</p>
               </div>
-              <div class="pricing_table">
-                <table class="pricing_table_inner">
+              <div class="pricing__table">
+                <table class="pricing__table__inner">
                   <thead>
-                    <tr class="pricing_table_title">
-                      <th class="pricing_item_title">Items</th>
-                      <th class="pricing_plan">
+                    <tr class="pricing__table__title">
+                      <th class="pricing__item__title">Items</th>
+                      <th class="pricing__plan">
                         BASIC<br />
-                        <p class="pricing_sq">$20 per m2</p>
+                        <p class="pricing__sq">$20 per m2</p>
                       </th>
-                      <th class="pricing_plan">
+                      <th class="pricing__plan">
                         STANDARD<br />
-                        <p class="pricing_sq">$30 per m2</p>
+                        <p class="pricing__sq">$30 per m2</p>
                       </th>
-                      <th class="pricing_plan">
+                      <th class="pricing__plan">
                         BUSINESS<br />
-                        <p class="pricing_sq">$40 per m2</p>
+                        <p class="pricing__sq">$40 per m2</p>
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">Installation plan</td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">Installation plan</td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -486,8 +499,8 @@
                           </svg>
                         </div>
                       </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -504,65 +517,8 @@
                           </svg>
                         </div>
                       </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
-                              fill="#FF5A30"
-                            />
-                          </svg>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">Planning solutions (2-3 options)</td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
-                              fill="#FF5A30"
-                            />
-                          </svg>
-                        </div>
-                      </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
-                              fill="#FF5A30"
-                            />
-                          </svg>
-                        </div>
-                      </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -580,10 +536,10 @@
                         </div>
                       </td>
                     </tr>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">Lighting plan</td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">Planning solutions (2-3 options)</td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -600,8 +556,8 @@
                           </svg>
                         </div>
                       </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -618,65 +574,8 @@
                           </svg>
                         </div>
                       </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
-                              fill="#FF5A30"
-                            />
-                          </svg>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">Flooring plan</td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
-                              fill="#FF5A30"
-                            />
-                          </svg>
-                        </div>
-                      </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
-                              fill="#FF5A30"
-                            />
-                          </svg>
-                        </div>
-                      </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -694,11 +593,125 @@
                         </div>
                       </td>
                     </tr>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">Heating floor laying scheme</td>
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">Lighting plan</td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                              fill="#FF5A30"
+                            />
+                          </svg>
+                        </div>
+                      </td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                              fill="#FF5A30"
+                            />
+                          </svg>
+                        </div>
+                      </td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                              fill="#FF5A30"
+                            />
+                          </svg>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">Flooring plan</td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                              fill="#FF5A30"
+                            />
+                          </svg>
+                        </div>
+                      </td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                              fill="#FF5A30"
+                            />
+                          </svg>
+                        </div>
+                      </td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                              fill="#FF5A30"
+                            />
+                          </svg>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">Heating floor laying scheme</td>
                       <td></td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -715,8 +728,8 @@
                           </svg>
                         </div>
                       </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -734,11 +747,11 @@
                         </div>
                       </td>
                     </tr>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">Air conditioner zones layout</td>
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">Air conditioner zones layout</td>
                       <td></td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -755,48 +768,8 @@
                           </svg>
                         </div>
                       </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
-                              fill="#FF5A30"
-                            />
-                          </svg>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">3D visualization of all rooms</td>
-                      <td class="pricing_note">simplified</td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
-                              fill="#FF5A30"
-                            />
-                          </svg>
-                        </div>
-                      </td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -814,12 +787,52 @@
                         </div>
                       </td>
                     </tr>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">Visualization of each room (3-4 angles)</td>
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">3D visualization of all rooms</td>
+                      <td class="pricing__note">simplified</td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                              fill="#FF5A30"
+                            />
+                          </svg>
+                        </div>
+                      </td>
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                              fill="#FF5A30"
+                            />
+                          </svg>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">Visualization of each room (3-4 angles)</td>
                       <td></td>
                       <td></td>
-                      <td class="pricing_check">
-                        <div class="pricing_check_img">
+                      <td class="pricing__check">
+                        <div class="pricing__check__img">
                           <svg
                             width="24"
                             height="24"
@@ -837,40 +850,40 @@
                         </div>
                       </td>
                     </tr>
-                    <tr class="pricing_table_stroke">
-                      <td class="pricing_item">Terms</td>
-                      <td class="pricing_term">10 days</td>
-                      <td class="pricing_term">20 days</td>
-                      <td class="pricing_term">30 days</td>
+                    <tr class="pricing__table__line">
+                      <td class="pricing__item">Terms</td>
+                      <td class="pricing__term">10 days</td>
+                      <td class="pricing__term">20 days</td>
+                      <td class="pricing__term">30 days</td>
                     </tr>
-                    <tr class="pricing_table_buttons">
-                      <td class="pricing_item"></td>
-                      <td class="column_button"><button class="pricing_btn">Send Request</button></td>
-                      <td class="column_button"><button class="pricing_btn">Send Request</button></td>
-                      <td class="column_button"><button class="pricing_btn">Send Request</button></td>
+                    <tr class="pricing__table__buttons">
+                      <td class="pricing__item"></td>
+                      <td class="column__button"><button class="pricing__btn">Send Request</button></td>
+                      <td class="column__button"><button class="pricing__btn">Send Request</button></td>
+                      <td class="column__button"><button class="pricing__btn">Send Request</button></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div class="clients">
-                <h4 class="clients_title">Supported by 12+ partners</h4>
-                <div class="clients_grid">
-                  <div class="client_item">
+                <h4 class="clients__title">Supported by 12+ partners</h4>
+                <div class="clients__grid">
+                  <div class="client__item">
                     <img src="/images/client1.png" alt="" />
                   </div>
-                  <div class="client_item">
+                  <div class="client__item">
                     <img src="/images/client2.png" alt="" />
                   </div>
-                  <div class="client_item">
+                  <div class="client__item">
                     <img src="/images/client3.png" alt="" />
                   </div>
-                  <div class="client_item">
+                  <div class="client__item">
                     <img src="/images/client4.png" alt="" />
                   </div>
-                  <div class="client_item">
+                  <div class="client__item">
                     <img src="/images/client5.png" alt="" />
                   </div>
-                  <div class="client_item">
+                  <div class="client__item">
                     <img src="/images/client6.png" alt="" />
                   </div>
                 </div>
@@ -878,48 +891,48 @@
             </div>
           </div>
         </div>
-        <div class="page_form">
+        <div class="page__form">
           <div class="container">
-            <div class="cont_form">
-              <div class="form_block">
-                <h4 class="form_title">A quick way to discuss details</h4>
-                <div class="form_detail">
-                  <div class="form_item">
-                    <p class="form_text">Name*</p>
-                    <input class="form_input" type="text" placeholder="Your name" />
+            <div class="cont__form">
+              <div class="form__segment">
+                <h4 class="form__title">A quick way to discuss details</h4>
+                <div class="form__detail">
+                  <div class="form__item">
+                    <p class="form__text">Name*</p>
+                    <input class="form__input" type="text" placeholder="Your name" />
                   </div>
-                  <div class="form_item">
-                    <p class="form_text">Phone*</p>
-                    <input class="form_input" type="tel" placeholder="Your phone number" />
+                  <div class="form__item">
+                    <p class="form__text">Phone*</p>
+                    <input class="form__input" type="tel" placeholder="Your phone number" />
                   </div>
-                  <div class="form_item">
-                    <p class="form_text">Email*</p>
-                    <input class="form_input" type="email" placeholder="Your working email" />
+                  <div class="form__item">
+                    <p class="form__text">Email*</p>
+                    <input class="form__input" type="email" placeholder="Your working email" />
                   </div>
-                  <div class="form_item">
-                    <p class="form_text">Message*</p>
-                    <input class="form_input" type="text" placeholder="Your message" />
+                  <div class="form__item">
+                    <p class="form__text">Message*</p>
+                    <input class="form__input" type="text" placeholder="Your message" />
                   </div>
-                  <div class="form_checkbox">
-                    <input type="checkbox" />
+                  <div class="form__checkbox">
+                    <input class="form__input__checkbox" type="checkbox" />
                     <label>I agree to receive communications from Createx Construction Bureau.</label>
                   </div>
                 </div>
-                <div class="form_button_block">
-                  <button class="form_button">send request</button>
+                <div class="form__button__segment">
+                  <button class="form__button">send request</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <footer class="page_footer">
+      <footer class="page__footer">
         <div class="container">
-          <div class="page_block_footer">
-            <div class="footer_up_block">
-              <div class="info_company">
-                <div class="talk_company">
-                  <div class="logo_company">
+          <div class="page__block__footer">
+            <div class="footer__up__block">
+              <div class="info__company">
+                <div class="talk__company">
+                  <div class="logo__company">
                     <svg width="142" height="24" viewBox="0 0 142 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M0 12.1089C0 5.45433 3.60461 1.41797 9.50308 1.41797C13.9815 1.41797 17.5862 4.14524 18.2415 8.18161C18.3508 8.61797 18.0231 8.94524 17.5862 8.94524H14.7462C14.4185 8.94524 14.2 8.72706 14.0908 8.39979C13.5446 6.32706 11.7969 5.01797 9.50308 5.01797C6.33538 5.01797 4.36923 7.74524 4.36923 12.1089C4.36923 16.4725 6.33538 19.1998 9.61231 19.1998C11.9062 19.1998 13.5446 17.9998 14.2 16.0362C14.3092 15.7089 14.5277 15.4907 14.8554 15.4907H17.6954C18.1323 15.4907 18.46 15.9271 18.3508 16.2543C17.6954 20.1816 14.2 22.7998 9.61231 22.7998C3.60462 22.7998 0 18.6543 0 12.1089Z"
@@ -955,7 +968,7 @@
                       />
                     </svg>
                   </div>
-                  <div class="messangers_company">
+                  <div class="messangers__company">
                     <button class="messanger">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.6">
@@ -1008,69 +1021,68 @@
                     </button>
                   </div>
                 </div>
-                <p class="company_desc">
+                <p class="company__desc">
                   Createx Construction Bureau has been successfully operating in the USA<br />construction market since
                   2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the
                   highest standards for construction sphere.
                 </p>
               </div>
-              <div class="description_mail">
-                <h4 class="desc_title">Let’s stay in touch</h4>
-                <div class="mail_block">
-                  <input class="input_mail" type="email" placeholder="Your email address" />
-                  <button class="button_subscribe">subscribe</button>
+              <div class="description__mail">
+                <h4 class="desc__title">Let’s stay in touch</h4>
+                <div class="mail__block">
+                  <input class="input__mail" type="email" placeholder="Your email address" />
+                  <button class="button__subscribe">subscribe</button>
                 </div>
-                <p class="annotation_mail">
+                <p class="annotation__mail">
                   *Subscribe to our newsletter to receive communications and early updates from Createx Construction
                   Bureau.
                 </p>
               </div>
             </div>
-            <div class="footer_middle_block">
-              <div class="head_office">
+            <div class="footer__middle__block">
+              <div class="head__office">
                 <h4 class="title">HEAD OFFICE</h4>
-                <div class="stroka">
-                  <p class="text_strong">Address:</p>
-                  <p class="text_light">8502 Preston Rd. Inglewood, New York</p>
+                <div class="info__line">
+                  <p class="text__strong">
+                    Address: <span class="text__light">8502 Preston Rd. Inglewood, New York</span>
+                  </p>
                 </div>
-                <div class="stroka">
-                  <p class="text_strong">Call:</p>
-                  <p class="text_light">(405) 555-0128</p>
+                <div class="info__line">
+                  <p class="text__strong">Call: <span class="text__light">(405) 555-0128</span></p>
                 </div>
-                <div class="stroka">
-                  <p class="text_strong">Email:</p>
-                  <p class="text_light">hello@createx.com</p>
+                <div class="info__line">
+                  <p class="text__strong">Email: <span class="text__light">hello@createx.com</span></p>
                 </div>
               </div>
-              <div class="who_we_are">
+              <div class="who__we__are">
                 <h4 class="title">WHO WE ARE</h4>
-                <div class="stroka">
-                  <p class="text_light">About Us</p>
+                <div class="info__line">
+                  <p class="text__light">About Us</p>
                 </div>
-                <div class="stroka">
-                  <p class="text_light">Available Positions</p>
+                <div class="info__line">
+                  <p class="text__light">Available Positions</p>
                 </div>
-                <div class="stroka">
-                  <p class="text_light">Contacts</p>
+                <div class="info__line">
+                  <p class="text__light">Contacts</p>
                 </div>
               </div>
               <div class="experience">
                 <h4 class="title">OUR EXPERIENCE</h4>
-                <div class="stroka">
-                  <p class="text_light">Services</p>
+                <div class="info__line">
+                  <p class="text__light">Services</p>
                 </div>
-                <div class="stroka">
-                  <p class="text_light">Work</p>
+                <div class="info__line">
+                  <p class="text__light">Work</p>
                 </div>
-                <div class="stroka">
-                  <p class="text_light">News</p>
+                <div class="info__line">
+                  <p class="text__light">News</p>
                 </div>
               </div>
             </div>
             <div class="copyright">
-              <div class="text_copyright">
-                <p class="CC_text">© All rights reserved. Made with</p>
-                <div class="heart_img">
+              <div class="text__copyright">
+                <p class="CC__text">© All rights reserved. Made with</p>
+                <div class="heart__img">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -1080,11 +1092,11 @@
                     />
                   </svg>
                 </div>
-                <p class="CC_text">by Createx Studio</p>
+                <p class="CC__text">by Createx Studio</p>
               </div>
-              <div class="go_to_top">
-                <p class="go_to_text">Go to top</p>
-                <button class="go_to_button">
+              <div class="go__to__top">
+                <p class="go__to__text">GO TO TOP</p>
+                <button class="go__to__button">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"

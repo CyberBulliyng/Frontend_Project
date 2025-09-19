@@ -1,4 +1,4 @@
-.cont_form {
+.cont__form {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -6,7 +6,7 @@
   padding-bottom: 80px;
 }
 
-.form_block {
+.form__segment {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
     0 60px 80px -20px rgb(30 33 44 / 16%);
 }
 
-.form_detail {
+.form__detail {
   display: flex;
   flex-direction: column;
   padding-left: 40px;
@@ -30,13 +30,13 @@
   max-width: 495px;
 }
 
-.form_item {
+.form__item {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.form_title {
+.form__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 150%;
@@ -46,7 +46,7 @@
   padding-bottom: 24px;
 }
 
-.form_text {
+.form__text {
   padding-top: 20px;
   padding-bottom: 8px;
   font-weight: 400;
@@ -55,12 +55,13 @@
   color: var(--color-grey-800);
 }
 
-.form_input {
+.form__input {
   border: 1px solid var(--color-grey-400);
   border-radius: 4px;
+  height: 44px;
 }
 
-.form_input::placeholder {
+.form__input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -70,7 +71,7 @@
   padding-top: 12px;
 }
 
-.form_checkbox {
+.form__checkbox {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -78,9 +79,33 @@
   font-size: 14px;
   line-height: 150%;
   padding-bottom: 27px;
+  padding-top: 8px;
 }
 
-.form_button {
+.form__input__checkbox[type='checkbox'] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-orange);
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+}
+
+.form__input__checkbox[type='checkbox']:checked {
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+.form__input__checkbox[type='checkbox']:checked::after {
+  content: url('/images/check.svg');
+  position: relative;
+  top: -5px;
+  left: 1px;
+}
+
+.form__button {
   padding-left: 32px;
   padding-right: 32px;
   font-weight: 700;
@@ -95,7 +120,7 @@
   color: var(--color-white);
 }
 
-.form_button_block {
+.form__button__segment {
   padding-bottom: 48px;
   padding-top: 24px;
 }

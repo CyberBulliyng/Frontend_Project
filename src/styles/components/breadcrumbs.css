@@ -1,0 +1,17 @@
+.breadcrumbs {
+  padding-top: 80px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  padding-bottom: 40px;
+  gap: 8px;
+}
+
+.breadcrumbs__link {
+  color: var(--color-grey-800);
+}
+
+.breadcrumbs__link--active {
+  color: var(--color-grey-600);
+}

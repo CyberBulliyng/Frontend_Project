@@ -1,16 +1,22 @@
-.first_block_content {
+.card__offer {
   padding-top: 120px;
   background-color: var(--color-white);
 }
 
-.first_block_bunner {
+.card__offer__bunner {
   display: flex;
   flex-direction: row;
   gap: 105px;
   padding-bottom: 180px;
 }
 
-.bunner_title {
+.card__offer__img {
+  width: 704px;
+  height: 440px;
+  size: cover;
+}
+
+.bunner__title {
   font-size: 46px;
   line-height: 130%;
   font-weight: bold;
@@ -18,83 +24,94 @@
   padding-bottom: 60px;
 }
 
-.block_title {
+.bunner__segment__head {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-.bunner_minus_title {
-  font-size: 28px;
-  line-height: 150%;
-  color: var(--color-grey-900);
+.bunner__segment__btn {
+  all: unset;
+  cursor: pointer;
 }
 
-.bunner_minus_desc {
-}
-
-.bunner_plus_title {
-  font-size: 28px;
-  line-height: 150%;
-  color: var(--color-grey-900);
-}
-
-.minus_block {
-  display: flex;
-  flex-direction: column;
-}
-
-.plus_block {
-  display: flex;
-  flex-direction: column;
-}
-
-/* .bunner_minus_desc {
+.bunner__divider__desc {
   padding-left: 44px;
-} */
-.info_title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-grey-700);
+}
+
+.bunner__segment__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: var(--color-grey-900);
+  padding-left: 10px;
+}
+
+.bunner__img {
+  padding-top: 15px;
+}
+
+.bunner__divider__segment {
+  display: flex;
+  flex-direction: column;
+}
+
+.bunner__plus__segment {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+.info__title {
   font-size: 46px;
   line-height: 130%;
   color: var(--color-grey-900);
   padding-bottom: 60px;
 }
 
-.info_block {
+.info__block {
   padding-bottom: 120px;
 }
 
-.how_we_do {
+.how__we__do {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
-.how_we_do_item {
+.how__we__do__item {
   display: flex;
   flex-direction: column;
 }
 
-.number_item {
+.how__we__do__item:hover {
+}
+
+.number__item {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 23px;
 }
 
-.digit_item {
+.digit__item {
   font-size: 46px;
   line-height: 130%;
   color: var(--color-grey-400);
   font-weight: bold;
 }
 
-.title_item {
+.item__title {
   font-size: 20px;
   line-height: 150%;
   color: var(--color-grey-900);
 }
 
-.item_desc {
+.item__desc {
   font-size: 16px;
   line-height: 160%;
   color: var(--color-grey-700);

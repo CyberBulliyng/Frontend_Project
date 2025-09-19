@@ -5,10 +5,12 @@
 @import './styles/components/container.css';
 @import './styles/components/navbar.css';
 @import './styles/components/page.css';
-@import './styles/components/blocktext.css';
-@import './styles/components/recommend.css';
+@import './styles/components/button.css';
+@import './styles/components/breadcrumbs.css';
+@import './styles/components/bunnerhead.css';
+@import './styles/components/cardoffer.css';
 @import './styles/components/benefits.css';
 @import './styles/components/portfolio.css';
 @import './styles/components/pricing.css';
-@import './styles/components/formblock.css';
+@import './styles/components/form.css';
 @import './styles/components/footer.css';

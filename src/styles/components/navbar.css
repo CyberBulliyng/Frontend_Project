@@ -8,26 +8,35 @@
   justify-content: space-between;
 }
 
-.navbar_menu {
+.navbar__menu {
   display: flex;
   flex-direction: row;
   padding-left: 60px;
   padding-right: 172px;
   gap: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
 }
 
-.navbar_logo {
+.navbar__logo {
   display: flex;
   flex-direction: row;
+  gap: 3px;
 }
 
-.navbar_action {
+.navbar__link:hover {
+  color: var(--color-orange);
+  cursor: pointer;
+}
+
+.navbar__actions {
   display: flex;
   flex-direction: row;
   gap: 36px;
 }
 
-.action_content {
+.navbar__action {
   display: flex;
   flex-direction: row;
   gap: 12px;

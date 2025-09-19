@@ -1,28 +1,29 @@
-.page_block_footer {
+.page__block__footer {
   display: flex;
   flex-direction: column;
 }
 
-.footer_up_block {
-  display: flex;
-  flex-direction: row;
+.footer__up__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding-top: 80px;
-  gap: 242px;
+  gap: 200px;
 }
 
-.info_company {
+.info__company {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 445px;
 }
 
-.talk_company {
+.talk__company {
   display: flex;
   flex-direction: row;
   gap: 60px;
 }
 
-.messangers_company {
+.messangers__company {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 16px;
@@ -35,7 +36,7 @@
   padding: 0;
 }
 
-.company_desc {
+.company__desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -43,24 +44,26 @@
   opacity: 0.6;
 }
 
-.description_mail {
+.description__mail {
   display: flex;
   flex-direction: column;
 }
 
-.mail_block {
+.mail__block {
   display: flex;
   flex-direction: row;
   padding-top: 24px;
+  max-width: 400px;
 }
 
-.input_mail {
+.input__mail {
+  flex: 1;
   border: 1px solid rgb(255 255 255 / 20%);
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
   background: rgb(255 255 255 / 12%);
 }
 
-.input_mail::placeholder {
+.input__mail::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -69,7 +72,8 @@
   opacity: 0.6;
 }
 
-.button_subscribe {
+.button__subscribe {
+  border: none;
   border-radius: 0 4px 4px 0;
   padding: 0 32px;
   background-color: var(--color-orange);
@@ -82,14 +86,14 @@
   color: var(--color-white);
 }
 
-.desc_title {
+.desc__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
   color: var(--color-white);
 }
 
-.annotation_mail {
+.annotation__mail {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -97,7 +101,7 @@
   opacity: 0.6;
 }
 
-.footer_middle_block {
+.footer__middle__block {
   display: flex;
   flex-direction: row;
   padding-top: 49px;
@@ -114,20 +118,20 @@
   padding-bottom: 13px;
 }
 
-.stroka {
+.info__line {
   display: flex;
   flex-direction: row;
   padding-bottom: 4px;
 }
 
-.text_strong {
+.text__strong {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: var(--color-white);
 }
 
-.text_light {
+.text__light {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
@@ -141,9 +145,10 @@
   padding-top: 60px;
   padding-bottom: 80px;
   justify-content: space-between;
+  align-items: center;
 }
 
-.text_copyright {
+.text__copyright {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -151,30 +156,32 @@
   gap: 2px;
 }
 
-.CC_text {
+.CC__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   color: var(--color-white);
 }
 
-.heart_img {
+.heart__img {
 }
 
-.go_to_top {
+.go__to__top {
   display: flex;
   flex-direction: row;
-  justify-content: end;
 }
 
-.go_to_text {
+.go__to__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: var(--color-white);
+  padding-top: 19px;
+  padding-right: 19px;
 }
 
-.go_to_button {
+.go__to__button {
+  border: none;
   border-radius: 4px;
   background-color: var(--color-orange);
   padding: 8px;
