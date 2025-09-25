@@ -6,7 +6,7 @@
 
 .header {
   flex-shrink: 0;
-  background-color: var(--color-grey-200);
+  background-color: var(--color-back);
   background-image: url('/images/background.png');
   background-repeat: no-repeat;
   background-position: right;
@@ -18,7 +18,7 @@
 }
 
 .page__benefits {
-  background-color: var(--color-grey-900);
+  background-color: var(--color-text);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .page__pricing {
@@ -38,7 +38,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-grey-200);
+  background-color: var(--color-back);
   background-image: url('/images/background1.png');
   background-repeat: no-repeat;
   background-position: top left;
@@ -53,5 +53,5 @@
 }
 
 .page__footer {
-  background-color: var(--color-grey-900);
+  background-color: var(--color-text);
 }

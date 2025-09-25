@@ -1,11 +1,11 @@
 .banner__title {
   font-size: 72px;
   font-weight: bold;
-  color: var(--color-grey-900);
+  color: var(--color-text);
   padding-bottom: 24px;
 }
 
 .banner__desc {
-  color: var(--color-grey-700);
+  color: var(--color-text-secondary);
   padding-bottom: 115px;
 }

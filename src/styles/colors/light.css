@@ -3,4 +3,10 @@
 
   --color-primary: var(--color-white);
   --color-secondary: var(--color-black);
+  --color-text: var(--color-grey-900); /* основной текст */
+  --color-text-secondary: var(--color-grey-700); /* второстепенный текст */
+  --color-text-third: var(--color-grey-800); /* второстепенный текст */
+  --color-border: var(--color-grey-300);
+  --color-surface: var(--color-grey-100); /* карточки, блоки */
+  --color-back: var(--color-grey-200);
 }
