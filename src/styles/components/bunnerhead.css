@@ -1,11 +1,61 @@
 .banner__title {
-  font-size: 72px;
+  font-size: 32px; /* базовый для мобильных */
   font-weight: bold;
   color: var(--color-text);
-  padding-bottom: 24px;
+  padding-bottom: 16px;
 }
 
 .banner__desc {
+  font-size: 14px; /* базовый для мобильных */
+  line-height: 150%;
   color: var(--color-text-secondary);
-  padding-bottom: 115px;
+  padding-bottom: 40px;
+}
+
+@media (--sm-viewport) {
+  .banner__title {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .banner__desc {
+    font-size: 15px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (--md-viewport) {
+  .banner__title {
+    font-size: 52px;
+    padding-bottom: 22px;
+  }
+
+  .banner__desc {
+    font-size: 16px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (--lg-viewport) {
+  .banner__title {
+    font-size: 64px;
+    padding-bottom: 24px;
+  }
+
+  .banner__desc {
+    font-size: 18px;
+    padding-bottom: 90px;
+  }
+}
+
+@media (--xl-viewport) {
+  .banner__title {
+    font-size: 72px; /* твой исходный */
+    padding-bottom: 24px;
+  }
+
+  .banner__desc {
+    font-size: 20px;
+    padding-bottom: 115px; /* твой исходный */
+  }
 }

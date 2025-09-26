@@ -1,22 +1,22 @@
-.card__offer {
+.card-offer {
   padding-top: 60px;
   background-color: var(--color-primary);
 }
 
-.card__offer__bunner {
+.card-offer__bunner {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-bottom: 60px;
 }
 
-.card__offer__img {
+.card-offer__img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.bunner__title {
+.card-offer__title {
   font-size: 28px;
   line-height: 130%;
   font-weight: bold;
@@ -25,18 +25,23 @@
   text-align: center;
 }
 
-.bunner__segment__head {
+.card-offer__segment__head {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.bunner__segment__btn {
+.card-offer__segment-btn {
   all: unset;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: 6px;
 }
 
-.bunner__divider__desc {
+.card-offer__segment-desc {
   padding-left: 0;
   font-weight: 400;
   font-size: 14px;
@@ -44,7 +49,7 @@
   color: var(--color-text-secondary);
 }
 
-.bunner__segment__title {
+.card-offer__segment-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -52,18 +57,12 @@
   padding-left: 0;
 }
 
-.bunner__img {
-  padding-top: 10px;
-}
-
-.bunner__divider__segment,
-.bunner__plus__segment {
+.card-offer__segment {
   display: flex;
   flex-direction: column;
-  padding-top: 16px;
 }
 
-.info__title {
+.information__title {
   font-size: 28px;
   line-height: 130%;
   color: var(--color-text);
@@ -71,177 +70,245 @@
   text-align: center;
 }
 
-.info__block {
+.information {
   padding-bottom: 60px;
 }
 
-.how__we__do {
+.how-we-do {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
-.how__we__do__item {
+.how-we-do__item {
   display: flex;
   flex-direction: column;
 }
 
-.number__item {
+.how-we-do__number-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 12px;
 }
 
-.digit__item {
+.how-we-do__number {
   font-size: 28px;
   line-height: 130%;
   color: var(--color-grey-400);
   font-weight: bold;
 }
 
-.item__title {
+.how-we-do__title {
   font-size: 16px;
   line-height: 150%;
   color: var(--color-text);
 }
 
-.item__desc {
+.how-we-do__desc {
   font-size: 14px;
   line-height: 160%;
   color: var(--color-text-secondary);
 }
 
 @media (--md-viewport) {
-  .card__offer {
+  .card-offer {
     padding-top: 80px;
   }
 
-  .card__offer__bunner {
+  .card-offer__bunner {
     flex-direction: row;
     gap: 60px;
     padding-bottom: 100px;
   }
 
-  .card__offer__img {
+  .card-offer__img {
     width: 100%;
     max-width: 400px;
     height: auto;
   }
 
-  .bunner__title {
+  .card-offer__title {
     font-size: 36px;
     padding-bottom: 40px;
     text-align: left;
   }
 
-  .bunner__divider__desc {
-    padding-left: 16px;
+  .card-offer__segment__head {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .card-offer__segment-btn {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+
+  .card-offer__segment-desc {
+    padding-left: 44px;
     font-size: 16px;
   }
 
-  .bunner__segment__title {
+  .card-offer__segment-title {
     font-size: 24px;
-    padding-left: 8px;
+    padding-left: 10px;
   }
 
-  .info__title {
+  .card-offer__segment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information__title {
     font-size: 36px;
     padding-bottom: 40px;
   }
 
-  .info__block {
+  .information {
     padding-bottom: 80px;
   }
 
-  .how__we__do {
+  .how-we-do {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
-  .digit__item {
+  .how-we-do__number {
     font-size: 36px;
   }
 
-  .item__title {
+  .how-we-do__title {
     font-size: 18px;
   }
 
-  .item__desc {
+  .how-we-do__desc {
     font-size: 16px;
   }
 }
 
 @media (--lg-viewport) {
-  .card__offer {
+  .card-offer {
     padding-top: 100px;
   }
 
-  .card__offer__bunner {
+  .card-offer__bunner {
     gap: 80px;
     padding-bottom: 140px;
   }
 
-  .card__offer__img {
+  .card-offer__img {
     max-width: 600px;
     height: auto;
   }
 
-  .bunner__title {
+  .card-offer__title {
     font-size: 42px;
     padding-bottom: 50px;
   }
 
-  .info__title {
+  .information__title {
     font-size: 42px;
     padding-bottom: 50px;
   }
 
-  .how__we__do {
+  .how-we-do {
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
   }
 
-  .digit__item {
+  .how-we-do__number {
     font-size: 42px;
+  }
+
+  .card-offer__segment__head {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .card-offer__segment-desc {
+    padding-left: 44px;
+    font-size: 16px;
+  }
+
+  .card-offer__segment-title {
+    font-size: 28px;
+    padding-left: 10px;
   }
 }
 
 @media (--xl-viewport) {
-  .card__offer {
+  .card-offer {
     padding-top: 120px;
   }
 
-  .card__offer__bunner {
+  .card-offer__bunner {
     gap: 105px;
     padding-bottom: 180px;
   }
 
-  .card__offer__img {
+  .card-offer__img {
     width: 704px;
     height: 440px;
+    object-fit: cover;
   }
 
-  .bunner__title {
+  .card-offer__title {
     font-size: 46px;
     padding-bottom: 60px;
   }
 
-  .bunner__segment__title {
+  .card-offer__segment__head {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .card-offer__segment-btn {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+
+  .card-offer__segment-desc {
+    padding-left: 44px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-text-secondary);
+  }
+
+  .card-offer__segment-title {
+    font-weight: 700;
     font-size: 28px;
+    line-height: 150%;
+    color: var(--color-text);
+    padding-left: 10px;
   }
 
-  .info__title {
+  .card-offer__segment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information__title {
     font-size: 46px;
     padding-bottom: 60px;
   }
 
-  .how__we__do {
+  .how-we-do {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
 
-  .digit__item {
+  .how-we-do__number {
     font-size: 46px;
   }
 }

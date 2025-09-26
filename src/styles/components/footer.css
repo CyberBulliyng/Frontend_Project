@@ -1,29 +1,29 @@
-.page__block__footer {
+.footer {
   display: flex;
   flex-direction: column;
 }
 
-.footer__up__block {
+.footer__up-segment {
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 40px;
   gap: 40px;
 }
 
-.info__company {
+.footer__up-info {
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 100%;
 }
 
-.talk__company {
+.footer__up-talk {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.messangers__company {
+.footer__up-messangers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
@@ -36,7 +36,7 @@
   padding: 0;
 }
 
-.company__desc {
+.footer__up-desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -44,27 +44,28 @@
   opacity: 0.6;
 }
 
-.description__mail {
+.footer__up-description-mail {
   display: flex;
   flex-direction: column;
 }
 
-.mail__block {
+.footer__up-mail {
   display: flex;
   flex-direction: column;
   padding-top: 24px;
   max-width: 100%;
+  gap: 8px;
 }
 
-.input__mail {
+.footer__up-mail-input {
   flex: 1;
   border: 1px solid rgb(255 255 255 / 20%);
   border-radius: 4px;
   background: rgb(255 255 255 / 12%);
-  margin-bottom: 12px;
+  min-height: 44px;
 }
 
-.input__mail::placeholder {
+.footer__up-mail-input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -73,7 +74,7 @@
   opacity: 0.6;
 }
 
-.button__subscribe {
+.footer__up-mail-button {
   border: none;
   border-radius: 4px;
   width: 100%;
@@ -87,20 +88,20 @@
   color: var(--color-primary);
 }
 
-.button__subscribe:hover {
+.footer__up-mail-button:hover {
   border: 1px solid var(--color-orange);
   background-color: var(--color-primary);
   color: var(--color-orange);
 }
 
-.desc__title {
+.footer__up-description-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
   color: var(--color-primary);
 }
 
-.annotation__mail {
+.footer__up-mail-annotation {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -108,14 +109,14 @@
   opacity: 0.6;
 }
 
-.footer__middle__block {
+.footer__middle__segment {
   display: flex;
   flex-direction: column;
   padding-top: 32px;
   gap: 40px;
 }
 
-.title {
+.footer__middle-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
@@ -125,20 +126,20 @@
   padding-bottom: 13px;
 }
 
-.info__line {
+.footer__middle-info-line {
   display: flex;
   flex-direction: row;
   padding-bottom: 4px;
 }
 
-.text__strong {
+.footer__middle-text--strong {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: var(--color-primary);
 }
 
-.text__light {
+.footer__middle-text--light {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
@@ -146,7 +147,7 @@
   opacity: 0.6;
 }
 
-.copyright {
+.footer__middle-copyright {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -156,7 +157,7 @@
   align-items: center;
 }
 
-.text__copyright {
+.footer__middle-copyright-content {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -164,72 +165,51 @@
   gap: 2px;
 }
 
-.CC__text {
+.footer__middle-CC-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   color: var(--color-primary);
 }
 
-.heart__img {
-}
-
-.go__to__top {
-  display: flex;
-  flex-direction: row;
-}
-
-.go__to__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: var(--color-primary);
-  padding-top: 19px;
-  padding-right: 19px;
-}
-
-.go__to__button {
-  border: none;
-  border-radius: 4px;
-  background-color: var(--color-orange);
-  padding: 8px;
+.footer__middle-heart-img {
 }
 
 @media (--md-viewport) {
-  .footer__up__block {
+  .footer__up-segment {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     padding-top: 60px;
   }
 
-  .talk__company {
+  .footer__up-talk {
     flex-direction: row;
     gap: 40px;
   }
 
-  .messangers__company {
+  .footer__up-messangers {
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
   }
 
-  .mail__block {
+  .footer__up-mail {
     flex-direction: row;
     max-width: 400px;
+    gap: 0;
   }
 
-  .input__mail {
+  .footer__up-mail-input {
     border-radius: 4px 0 0 4px;
-    margin-bottom: 0;
   }
 
-  .button__subscribe {
+  .footer__up-mail-button {
     border-radius: 0 4px 4px 0;
     width: auto;
     padding: 0 32px;
     line-height: 314%;
   }
 
-  .footer__middle__block {
+  .footer__middle__segment {
     flex-direction: row;
     gap: 60px;
     padding-top: 49px;
@@ -246,21 +226,21 @@
 }
 
 @media (--lg-viewport) {
-  .footer__up__block {
+  .footer__up-segment {
     gap: 120px;
   }
 
-  .footer__middle__block {
+  .footer__middle__segment {
     gap: 100px;
   }
 }
 
 @media (--xl-viewport) {
-  .footer__up__block {
+  .footer__up-segment {
     gap: 200px;
   }
 
-  .footer__middle__block {
+  .footer__middle__segment {
     gap: 125px;
   }
 }
