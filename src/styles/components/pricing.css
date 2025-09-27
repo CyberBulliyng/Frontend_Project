@@ -44,7 +44,7 @@
 
 .pricing__table-inner {
   width: 100%;
-  min-width: 800px; /* Минимальная ширина для читаемости */
+  min-width: 800px;
   border-collapse: collapse;
 }
 
@@ -52,8 +52,7 @@
   background: var(--color-back);
 }
 
-/* Заголовок таблицы */
-.pricing__table-title th {
+.pricing__table-title {
   padding: 16px 12px;
   text-align: center;
   vertical-align: top;
@@ -89,7 +88,6 @@
   color: var(--color-text-secondary);
 }
 
-/* Содержимое таблицы */
 .pricing__item {
   font-weight: 400;
   font-size: 14px;

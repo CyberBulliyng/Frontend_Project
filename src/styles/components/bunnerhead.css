@@ -1,12 +1,12 @@
 .banner__title {
-  font-size: 32px; /* базовый для мобильных */
+  font-size: 32px;
   font-weight: bold;
   color: var(--color-text);
   padding-bottom: 16px;
 }
 
 .banner__desc {
-  font-size: 14px; /* базовый для мобильных */
+  font-size: 14px;
   line-height: 150%;
   color: var(--color-text-secondary);
   padding-bottom: 40px;
@@ -50,12 +50,12 @@
 
 @media (--xl-viewport) {
   .banner__title {
-    font-size: 72px; /* твой исходный */
+    font-size: 72px;
     padding-bottom: 24px;
   }
 
   .banner__desc {
     font-size: 20px;
-    padding-bottom: 115px; /* твой исходный */
+    padding-bottom: 115px;
   }
 }
