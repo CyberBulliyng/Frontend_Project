@@ -38,7 +38,7 @@
   justify-content: center;
 }
 
-.benefis__item {
+.benefits__item {
   display: flex;
   flex-direction: column;
   align-items: center;

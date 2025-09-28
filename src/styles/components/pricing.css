@@ -188,6 +188,7 @@
 
 .clients__grid {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 60px;
   gap: 24px;
