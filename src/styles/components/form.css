@@ -68,7 +68,6 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 150%;
-  background-color: var(--color-back);
   padding-left: 12px;
 }
 
@@ -134,7 +133,6 @@
   padding-top: 20px;
 }
 
-/* sm */
 @media (--sm-viewport) {
   .form__title {
     font-size: 24px;
