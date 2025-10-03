@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-.portfolio__projects__grid {
+.portfolio__projects-grid {
   display: grid;
   grid-template-columns: 1fr;
   padding-top: 32px;
@@ -111,7 +111,7 @@
   color: var(--color-primary);
 }
 
-.all__portfolio {
+.portfolio__all {
   display: flex;
   flex-direction: column;
   padding-top: 40px;
@@ -120,7 +120,7 @@
   align-items: center;
 }
 
-.all__portfolio-title {
+.portfolio__all-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -128,7 +128,7 @@
   text-align: center;
 }
 
-.all__portfolio-btn {
+.portfolio__all-btn {
   padding: 8px 16px;
   font-weight: 700;
   font-size: 14px;
@@ -142,7 +142,7 @@
   border: 1px solid transparent;
 }
 
-.all__portfolio-btn:hover {
+.portfolio__all-btn:hover {
   border: 1px solid var(--color-orange);
   background-color: var(--color-primary);
   color: var(--color-orange);
@@ -165,7 +165,7 @@
     padding-top: 24px;
   }
 
-  .portfolio__projects__grid {
+  .portfolio__projects-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding-top: 40px;
@@ -184,18 +184,18 @@
     padding: 0 24px;
   }
 
-  .all__portfolio {
+  .portfolio__all {
     flex-direction: row;
     gap: 24px;
     padding-top: 60px;
     padding-bottom: 80px;
   }
 
-  .all__portfolio-title {
+  .portfolio__all-title {
     font-size: 24px;
   }
 
-  .all__portfolio-btn {
+  .portfolio__all-btn {
     font-size: 16px;
     padding: 0 24px;
   }
@@ -211,7 +211,7 @@
     font-size: 42px;
   }
 
-  .portfolio__projects__grid {
+  .portfolio__projects-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     padding-top: 50px;
@@ -237,7 +237,7 @@
     padding-top: 36px;
   }
 
-  .portfolio__projects__grid {
+  .portfolio__projects-grid {
     gap: 30px;
     padding-top: 60px;
   }

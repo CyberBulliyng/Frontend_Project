@@ -25,7 +25,7 @@
   text-align: center;
 }
 
-.card-offer__segment__head {
+.card-offer__segment-head {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -62,7 +62,7 @@
   flex-direction: column;
 }
 
-.information__title {
+.card-offer__information-title {
   font-size: 28px;
   line-height: 130%;
   color: var(--color-text);
@@ -70,42 +70,42 @@
   text-align: center;
 }
 
-.information {
+.card-offer__information {
   padding-bottom: 60px;
 }
 
-.how-we-do {
+.card-offer__how-we-do {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
-.how-we-do__item {
+.card-offer__how-we-do-item {
   display: flex;
   flex-direction: column;
 }
 
-.how-we-do__number-wrapper {
+.card-offer__how-we-do-number-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 12px;
 }
 
-.how-we-do__number {
+.card-offer__how-we-do-number {
   font-size: 28px;
   line-height: 130%;
   color: var(--color-grey-400);
   font-weight: bold;
 }
 
-.how-we-do__title {
+.card-offer__how-we-do-title {
   font-size: 16px;
   line-height: 150%;
   color: var(--color-text);
 }
 
-.how-we-do__desc {
+.card-offer__how-we-do-desc {
   font-size: 14px;
   line-height: 160%;
   color: var(--color-text-secondary);
@@ -134,7 +134,7 @@
     text-align: left;
   }
 
-  .card-offer__segment__head {
+  .card-offer__segment-head {
     flex-direction: row;
     gap: 10px;
   }
@@ -164,29 +164,29 @@
     flex-direction: column;
   }
 
-  .information__title {
+  .card-offer__information-title {
     font-size: 36px;
     padding-bottom: 40px;
   }
 
-  .information {
+  .card-offer__information {
     padding-bottom: 80px;
   }
 
-  .how-we-do {
+  .card-offer__how-we-do {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
-  .how-we-do__number {
+  .card-offer__how-we-do-number {
     font-size: 36px;
   }
 
-  .how-we-do__title {
+  .card-offer__how-we-do-title {
     font-size: 18px;
   }
 
-  .how-we-do__desc {
+  .card-offer__how-we-do-desc {
     font-size: 16px;
   }
 }
@@ -211,21 +211,21 @@
     padding-bottom: 50px;
   }
 
-  .information__title {
+  .card-offer__information-title {
     font-size: 42px;
     padding-bottom: 50px;
   }
 
-  .how-we-do {
+  .card-offer__how-we-do {
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
   }
 
-  .how-we-do__number {
+  .card-offer__how-we-do-number {
     font-size: 42px;
   }
 
-  .card-offer__segment__head {
+  .card-offer__segment-head {
     flex-direction: row;
     gap: 10px;
   }
@@ -262,7 +262,7 @@
     padding-bottom: 60px;
   }
 
-  .card-offer__segment__head {
+  .card-offer__segment-head {
     flex-direction: row;
     gap: 10px;
   }
@@ -298,17 +298,17 @@
     flex-direction: column;
   }
 
-  .information__title {
+  .card-offer__information-title {
     font-size: 46px;
     padding-bottom: 60px;
   }
 
-  .how-we-do {
+  .card-offer__how-we-do {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
 
-  .how-we-do__number {
+  .card-offer__how-we-do-number {
     font-size: 46px;
   }
 }
